@@ -49,5 +49,29 @@
     </main>
 
     <script type="module" src="script.js"></script>
+
+    <!--
+      Google tag (gtag.js)
+    -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2NYQESPF9Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = () => {
+        dataLayer.push(arguments);
+      };
+      gtag('js', new Date());
+      gtag('config', 'G-2NYQESPF9Y');
+    </script>
+
+    <script
+      src="https://unpkg.com/github-corners/dist/embed.min.js"
+      data-href="https://github.com/remarkablemark/web-speech-api-demo"
+      data-target="_blank"
+      async
+      defer
+    ></script>
   </body>
 </html>
