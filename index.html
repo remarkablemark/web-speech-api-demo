@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Web Speech API Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Web Speech API demonstration">
+  </head>
+  <body>
+    <h1>Web Speech API</h1>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <p hidden class="support">Web Speech API not supported</p>
+
+    <main>
+      <h2>Transcription</h2>
+      <textarea id="transcription" rows="6"></textarea>
+
+      <p>
+        <label>
+          Confidence:
+          <input id="confidence">
+        </label>
+      </p>
+
+      <p>
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en-US">English - United States</option>
+        </select>
+      </p>
+
+      <p class="recognition-options">
+        <label>
+          <input type="radio" name="recognition-type" value="interim" checked>Interim Results
+        </label>
+
+        <label>
+          <input type="radio" name="recognition-type" value="final">Final
+        </label>
+      </p>
+
+      <button id="record">Record</button>
+      <button id="stop">Stop</button>
+
+      <h2>Log</h2>
+      <textarea id="log" rows="6"></textarea>
+      <button id="clear">Clear</button>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

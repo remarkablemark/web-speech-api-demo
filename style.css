@@ -1,0 +1,14 @@
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+}
