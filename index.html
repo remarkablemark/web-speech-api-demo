@@ -59,8 +59,8 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      window.gtag = () => {
-        dataLayer.push(arguments);
+      window.gtag = (..args) => {
+        dataLayer.push(args);
       };
       gtag('js', new Date());
       gtag('config', 'G-2NYQESPF9Y');
